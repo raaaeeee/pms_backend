@@ -46,6 +46,21 @@
     },
     "problem_encountered": {
       "type": "text"
+    },
+    "wt": {
+      "type": "decimal"
+    },
+    "present_wt": {
+      "type": "decimal"
+    },
+    "previous_wt": {
+      "type": "decimal"
+    },
+    "remaining_wt": {
+      "type": "decimal"
+    },
+    "total_wt_used": {
+      "type": "decimal"
     }
   }
 }

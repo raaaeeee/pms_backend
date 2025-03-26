@@ -397,6 +397,8 @@ export interface ApiHeaderPerProjectSectionHeaderPerProjectSection
     > &
       Schema.Attribute.Private;
     mainDescription: Schema.Attribute.String;
+    present_wt: Schema.Attribute.Decimal;
+    previous_wt: Schema.Attribute.Decimal;
     problem_encountered: Schema.Attribute.Text;
     project: Schema.Attribute.Relation<'manyToOne', 'api::project.project'>;
     project_item_modifieds: Schema.Attribute.Relation<
@@ -409,9 +411,12 @@ export interface ApiHeaderPerProjectSectionHeaderPerProjectSection
     >;
     publishedAt: Schema.Attribute.DateTime;
     remaining: Schema.Attribute.Decimal;
+    remaining_wt: Schema.Attribute.Decimal;
+    total_wt_used: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    wt: Schema.Attribute.Decimal;
   };
 }
 
@@ -484,6 +489,7 @@ export interface ApiMaterialModifiedMaterialModified
     publishedAt: Schema.Attribute.DateTime;
     quantity: Schema.Attribute.Decimal;
     subtotal: Schema.Attribute.Decimal;
+    total_entered_quantity: Schema.Attribute.Decimal;
     unit: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

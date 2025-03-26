@@ -38,6 +38,9 @@
     },
     "previous_entered": {
       "type": "decimal"
+    },
+    "total_entered_quantity": {
+      "type": "decimal"
     }
   }
 }
