@@ -739,6 +739,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    delivery_date: Schema.Attribute.String;
     dueDate: Schema.Attribute.Date;
     header_per_project_sections: Schema.Attribute.Relation<
       'oneToMany',

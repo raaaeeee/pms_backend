@@ -52,12 +52,16 @@
       ]
     },
     "approved": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "delivery_date": {
+      "type": "string"
     }
   }
 }
